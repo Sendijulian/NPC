@@ -1,0 +1,76 @@
+### get all user
+GET http://localhost:3001/users
+
+### get user by id
+GET http://localhost:3001/users/clyd47lmo0000va5ep5125sgc
+
+### Create user
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "test1",
+    "email": "1",
+    "password": "1",
+    "confPassword": "1"
+}
+
+### Update user
+PATCH  http://localhost:3001/users/clyqge6io000014j6tjf9odnb
+Content-Type: application/json
+
+{
+    "name": "test1Up",
+    "email": "test1@gmail.com",
+    "password": "",
+    "confPassword": ""
+}
+
+### Delete user
+DELETE http://localhost:3001/users/clyd47lmo0000va5ep5125sgc
+
+
+### login
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email": "dani ",
+    "password": "1"
+}
+
+### get data me
+GET http://localhost:3001/auth/me/clz2ph2vj000010kxsbj6o527
+
+### logout
+DELETE http://localhost:3001/auth/logout
+
+### get all manajemen
+GET http://localhost:3001/manajemen/clz2e2d49000so794mmufhasm
+### crearte manajemen
+POST http://localhost:3001/manajemen/clz2e2d49000so794mmufhasm
+Content-Type: application/json
+
+{
+    "pengeluaran": 10000,
+    "keterangan": "beli",
+    "tipe": false
+}
+
+###
+GET http://localhost:3001/chart/clz2ph2vj000010kxsbj6o527
+
+###
+POST  http://localhost:3001/chart/clz2ph2vj000010kxsbj6o527
+Content-Type: application/json
+
+### Get Message
+GET http://localhost:3001/message
+
+### Create Message
+POST http://localhost:3001/message/clz2ph2vj000010kxsbj6o527
+Content-Type: application/json
+
+{
+    "text": "test from aloha"
+}
